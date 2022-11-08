@@ -19,7 +19,7 @@ class MenuController {
     }
 
     static let shared = MenuController()
-    private init() {}
+    private init() { }
 
     static let orderUpdatedNotification = Notification.Name("MenuController.orderUpdated")
 
@@ -90,19 +90,6 @@ class MenuController {
             }.resume()
         }
     }
-
-//    func fetchImage(url: URL, completion: @escaping (UIImage?) -> Void) {
-//        DispatchQueue.main.async {
-//            URLSession.shared.dataTask(with: url) { data, response, error in
-//                if let data {
-//                    let image = UIImage(data: data)
-//                    completion(image)
-//                } else {
-//                    completion(nil)
-//                }
-//            }.resume()
-//        }
-//    }
 
     func fetchImage(url: URL, completion: @escaping (UIImage?)
        -> Void) {
