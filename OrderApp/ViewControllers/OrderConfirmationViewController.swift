@@ -21,7 +21,7 @@ class OrderConfirmationViewController: UIViewController {
         confirmationLabel.text = "Thank you for your order! Your wait time is approximately \(minutesToPrepare ?? 99999) minutes"
     }
 
-
+    // MARK: - Callbacks
     @IBAction func dismissButtonTapped(_ sender: UIButton) {
         MenuController.shared.order.menuItems.removeAll()
         dismiss(animated: true)
